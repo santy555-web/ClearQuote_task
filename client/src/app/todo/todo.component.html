@@ -1,0 +1,24 @@
+<div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    <strong>Error!</strong> {{error}}
+  </div>
+
+  <div class="form-group">
+    <label for="title">Id</label>
+    <input type="text" class="form-control" id="id" [(ngModel)]="id">
+  </div>
+  <div class="form-group">
+    <label for="title">emp Name:</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="name">
+  </div>
+  <div class="form-group">
+    <label for="title">emp Gmail</label>
+    <input type="email" class="form-control" id="gmail" [(ngModel)]="gmail">
+  </div>
+  <div class="form-group">
+    <label for="description">Emp address :</label>
+    <textarea class="form-control" id="description" [(ngModel)]="empaddress"> </textarea>
+  </div>
+  <button type="button" (click)="addEmp()" class="btn btn-primary">Submit</button>
+</div>

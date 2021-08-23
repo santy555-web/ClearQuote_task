@@ -1,0 +1,13 @@
+<div *ngFor="let todo of todos" class="card mt-3">
+  <div class="card-header">
+    Employee Details
+    <button type="button" (click)="deleteTodo(todo._id)" style="float: right;" class="btn btn-danger">Delete</button>
+  </div>
+  <div class="card-body">
+    <p>Emp Id : &nbsp;{{todo.id}}</p> 
+   <p>Emp Name : &nbsp;{{todo.name}}</p> 
+   <p>Emp Gmail : &nbsp; {{todo.gmail}}</p>
+   <p>Emp Address :  &nbsp;{{todo.empaddress}}</p>
+  </div>
+ 
+</div>

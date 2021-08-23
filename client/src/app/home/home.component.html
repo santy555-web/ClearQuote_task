@@ -1,0 +1,19 @@
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-dark">
+  <a class="navbar-brand" href="#">app</a>
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home/todo']">Add Employee</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home/todo-list']">List of Employee</a>
+    </li>
+    <button type="button" (click)="logout()" class="btn btn-danger end">Logout</button>
+  </ul>
+
+</nav>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
